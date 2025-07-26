@@ -41,7 +41,7 @@ jobs:
       run: |
         if [ -d "android" ]; then
           echo "Removing existing Android platform..."
-          npx cap remove android
+          rm -rf android
         fi
         echo "Adding Android platform..."
         npx cap add android
